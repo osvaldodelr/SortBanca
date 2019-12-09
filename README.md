@@ -1,1 +1,16 @@
-# SortBanca
+
+PROYECTO DE BANCA PARA VER TOP 10 DE LOS NUMEROS QUE MAS SALEN
+Y ABAJO 10 DE LOS NUMEROS QUE MENOS SALEN.
+
+*** EL PROYECTO ESTA MONTADO SOBRE UNA BASE DE DATOS MYSQL (MariaDB)
+
+*** LAS DEPENDENCIAS NPM DIRECTAS:
+npm init - sí
+npm expreso
+npm i mysql
+npm i analizador corporal
+npm i manillar
+npm i morgan
+
+*** DEPENDENCIAS NPM INDIRECTAS:
+npm i nodemon -D
