@@ -1,0 +1,15 @@
+PROYECTO DE BANCA PARA VER TOP 10 DE LOS NUMEROS QUE MAS SALEN
+Y BOTTOM 10 DE LOS NUMEROS QUE MENOS SALEN.
+
+***EL PROYECTO ESTA MONTADO SOBRE UNA BASE DE DATOS MYSQL (MariaDB)
+
+***LAS DEPENDENCIAS NPM DIRECTAS:
+npm init --yes
+npm i express
+npm i mysql
+npm i body-parser
+npm i handlebars
+npm i morgan
+
+***DEPENDENCIAS NPM INDIRECTAS:
+npm i nodemon -D

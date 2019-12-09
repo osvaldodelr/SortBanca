@@ -1,0 +1,84 @@
+
+<a href="/">
+<img src="/img/logo.png" class="logo-posicion" width="8%">
+</a>
+
+{{!--============TOP 10 NUMEROS================--}}
+<div class="col-3 container float-left table-posicion1">
+    <div class="card">
+            <div class="card-header bg-success text-center">
+                <h5>TOP 10</h5>
+            </div>
+        <div class="card-body">
+            <table class="table-striped text-dark" id="tb-padding">
+                <thead class="text-center">
+                    <th width="50%">Rank</th>
+                    <th width="50%">Numero</th>
+                    <th width="50%">Recurrencia</th>
+                </thead>
+                {{#each TOP}}
+                <tr class="text-center" height="35%">
+                    <td>{{ math @index "+" 1}}</td>
+                    <td>{{Numero}}</td>
+                    <td>{{Recurrencia}}</td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+</div>
+
+
+{{!--============SELECTOR DE FECHAS================--}}
+
+
+<div class="col-3 container float-left table-posicion2 text-center">
+    <div class="card">
+            <div class="card-header bg-primary text-center">
+                <h5>Rango Fecha</h5>
+            </div>
+        <form action="/querys" method="POST">
+            <div class="input-group">
+                <div class="card-body">
+                    <label class="text-dark">Fecha Inicial</label>            
+                    <div class="card">                
+                        <input placeholder="Fecha Inicial" type="date" name="date1" autofocus>
+                    </div>
+                    <label class="text-dark">Fecha Final</label>
+                    <div class="card" >                
+                        <input placeholder="Fecha Final" type="date" name="date2">
+                    </div>
+                </div>          
+            </div> 
+            <div class="card">                
+                <input type="submit" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{{!--============BOTTOM 10 NUMEROS================--}}
+<div class="col-3 container float-right table-posicion3">
+    <div class="card">
+            <div class="card-header bg-danger text-center">
+                <h5>BOTTOM 10</h5>
+            </div>
+        <div class="card-body">
+            <table class="table-striped text-dark" id="tb-padding">
+                <thead class="text-center">
+                    <th width="50%">Rank</th>
+                    <th width="50%">Numero</th>
+                    <th width="50%">Recurrencia</th>
+                </thead>
+                {{#each BOTTOM}}
+                <tr class="text-center" height="35%">
+                    <td>{{ math @index "+" 1}}</td>
+                    <td>{{Numero}}</td>
+                    <td>{{Recurrencia}}</td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+</div>
