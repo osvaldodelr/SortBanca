@@ -1,2 +1,3 @@
-Back-end/node_modules
+Back-end/node_modules/*
+Back-end/db/*
 keys.js
